@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://fiddle.jshell.net/cbzgwktp/2/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title> - jsFiddle demo</title>
+  
+  
+  <script type="text/javascript" src="jquery-1.9.1.js"></script><style type="text/css"></style>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: 0,
+            plotShadow: false
+        },
+        title: {
+            text: 'TimeZone<br> Tweets<br>2015',
+            align: 'center',
+            verticalAlign: 'middle',
+            y: 40
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                dataLabels: {
+                    enabled: true,
+                    distance: -50,
+                    style: {
+                        fontWeight: 'bold',
+                        color: 'white',
+                        textShadow: '0px 1px 2px black'
+                    }
+                },
+                startAngle: -90,
+                endAngle: 90,
+                center: ['50%', '75%']
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: 'Tweets from different Timezone',
+            innerSize: '50%',
+            data: [
+                ['Eastern Time (US & Canada)',   147087],
+                ['Central Time (US & Canada)',       96051],
+                ['Pacific Time (US & Canada)', 88091],
+                ['Atlantic Time (Canada)',    32094],
+               
+                {
+                    name: 'Proprietary or Undetectable',
+                    y: 0.2,
+                    dataLabels: {
+                        enabled: false
+                    }
+                }
+            ]
+        }]
+    });
+});
+
+
+//]]> 
+
+</script>
+
+</head>
+<body>
+  <script src="highcharts.js"></script>
+<script src="exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="600" height="400"><desc>Created with Highcharts 4.1.9</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="580" height="375"></rect></clippath></defs><rect x="0" y="0" width="600" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-button" style="cursor:default;" stroke-linecap="round" transform="translate(566,10)"><title>Chart context menu</title><rect x="0.5" y="0.5" width="24" height="22" strokeWidth="1" fill="white" stroke="none" stroke-width="1" rx="2" ry="2"></rect><path fill="#E0E0E0" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" stroke="#666" stroke-width="3" zIndex="1"></path><text x="0" zIndex="1" style="color:black;fill:black;" y="12"></text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(10,10) scale(1 1)" style=""><path fill="#7cb5ec" d="M 112.50001472638473 271.3223039858121 A 177.5 177.5 0 0 1 237.51062708690418 101.68846034200456 L 263.7553135434521 186.46923017100227 A 88.75 88.75 0 0 0 201.25000736319237 271.28615199290607 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#434348" d="M 237.68021484298617 101.63605575860245 A 177.5 177.5 0 0 1 379.8540956588182 118.17324966430746 L 334.9270478294091 194.71162483215375 A 88.75 88.75 0 0 0 263.8401074214931 186.4430278793012 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#90ed7d" d="M 380.007127456597 118.26318028335939 A 177.5 177.5 0 0 1 460.6363081259434 222.36748421830052 L 375.3181540629717 246.80874210915024 A 88.75 88.75 0 0 0 335.0035637282985 194.75659014167968 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#f7a35c" d="M 460.6851053154311 222.53814493924293 A 177.5 177.5 0 0 1 467.49991125000736 271.07250002958335 L 378.7499556250037 271.1612500147917 A 88.75 88.75 0 0 0 375.34255265771554 246.89407246962145 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path><path fill="#8085e9" d="M 467.5 271.25 A 177.5 177.5 0 0 1 467.49991125000736 271.07250002958335 L 378.7499556250037 271.1612500147917 A 88.75 88.75 0 0 0 378.75 271.25 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path></g><g class="highcharts-markers highcharts-series-0" visibility="visible" zIndex="0.1" transform="translate(10,10) scale(1 1)"></g></g><text x="300" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:536px;" y="238"><tspan>TimeZone</tspan><tspan x="300" dy="21"> Tweets</tspan><tspan x="300" dy="21">2015</tspan></text><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="6" transform="translate(10,10) scale(1 1)" opacity="1" style=""><g zIndex="1" style="" transform="translate(109,186)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:white;text-shadow:0px 1px 2px black;fill:white;text-rendering:geometricPrecision;" y="16"><tspan>Eastern Time (US &amp; Canada)</tspan></text></g><g zIndex="1" style="" transform="translate(226,135)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:white;text-shadow:0px 1px 2px black;fill:white;text-rendering:geometricPrecision;" y="16"><tspan>Central Time (US &amp; Canada)</tspan></text></g><g zIndex="1" style="" transform="translate(315,183)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:white;text-shadow:0px 1px 2px black;fill:white;text-rendering:geometricPrecision;" y="16"><tspan>Pacific Time (US &amp; Canada)</tspan></text></g><g zIndex="1" style="" transform="translate(351,244)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:white;text-shadow:0px 1px 2px black;fill:white;text-rendering:geometricPrecision;" y="16"><tspan>Atlantic Time (Canada)</tspan></text></g></g><g class="highcharts-legend" zIndex="7"><g zIndex="1"><g></g></g></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(0,-9999)"><path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="20"></text></g><text x="590" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">Highcharts.com</text></svg></div></div>
+
+  
+
+
+
+
+</body></html>

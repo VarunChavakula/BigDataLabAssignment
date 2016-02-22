@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://fiddle.jshell.net/eab2naqp/1/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Highcharts Demo - jsFiddle demo</title>
+  
+  
+  <script type="text/javascript" src="jquery-1.9.1.js"></script><style type="text/css"></style>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+$(function () {
+    // Create the chart
+    $('#container').highcharts({
+        chart: {
+            type: 'pie'
+        },
+        title: {
+            text: 'Most popular locations'
+        },
+        subtitle: {
+            text: ''
+        },
+        plotOptions: {
+            series: {
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}: {point.y:.1f}%'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Atlanta',
+                y: 2313,
+                drilldown: 'Atlanta'
+            }, {
+                name: 'Chicago',
+                y: 2386,
+                drilldown: 'Chicago'
+            }, {
+                name: 'Houston',
+                y: 2464,
+                drilldown: 'Houston'
+            }, {
+                name: 'New York',
+                y: 2965,
+                drilldown: 'New York'
+            }, {
+                name: 'Los Angeles',
+                y: 3272,
+                drilldown: 'Los Angeles'
+            }, {
+                name: 'Rest of USA',
+                y: 5310,
+                drilldown: null
+            }]
+        }],
+        drilldown: {
+            series: [{
+                name: 'Microsoft Internet Explorer',
+                id: 'Microsoft Internet Explorer',
+                data: [
+                    ['v11.0', 24.13],
+                    ['v8.0', 17.2],
+                    ['v9.0', 8.11],
+                    ['v10.0', 5.33],
+                    ['v6.0', 1.06],
+                    ['v7.0', 0.5]
+                ]
+            }, {
+                name: 'Chrome',
+                id: 'Chrome',
+                data: [
+                    ['v40.0', 5],
+                    ['v41.0', 4.32],
+                    ['v42.0', 3.68],
+                    ['v39.0', 2.96],
+                    ['v36.0', 2.53],
+                    ['v43.0', 1.45],
+                    ['v31.0', 1.24],
+                    ['v35.0', 0.85],
+                    ['v38.0', 0.6],
+                    ['v32.0', 0.55],
+                    ['v37.0', 0.38],
+                    ['v33.0', 0.19],
+                    ['v34.0', 0.14],
+                    ['v30.0', 0.14]
+                ]
+            }, {
+                name: 'Firefox',
+                id: 'Firefox',
+                data: [
+                    ['v35', 2.76],
+                    ['v36', 2.32],
+                    ['v37', 2.31],
+                    ['v34', 1.27],
+                    ['v38', 1.02],
+                    ['v31', 0.33],
+                    ['v33', 0.22],
+                    ['v32', 0.15]
+                ]
+            }, {
+                name: 'Safari',
+                id: 'Safari',
+                data: [
+                    ['v8.0', 2.56],
+                    ['v7.1', 0.77],
+                    ['v5.1', 0.42],
+                    ['v5.0', 0.3],
+                    ['v6.1', 0.29],
+                    ['v7.0', 0.26],
+                    ['v6.2', 0.17]
+                ]
+            }, {
+                name: 'Opera',
+                id: 'Opera',
+                data: [
+                    ['v12.x', 0.34],
+                    ['v28', 0.24],
+                    ['v27', 0.17],
+                    ['v29', 0.16]
+                ]
+            }]
+        }
+    });
+});
+//]]> 
+
+</script>
+
+</head>
+<body>
+  <script src="highcharts.js"></script>
+<script src="data.js"></script>
+<script src="drilldown.js"></script>
+
+<div id="container" style="min-width: 310px; max-width: 600px; height: 400px; margin: 0 auto" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="600" height="400"><desc>Created with Highcharts 4.1.9</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="580" height="332"></rect></clippath></defs><rect x="0" y="0" width="600" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-series-group" zIndex="3"><path fill="rgba(241,92,128,0.25)" d="M 0 0"></path><g class="highcharts-series highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(10,53) scale(1 1)" style=""><path fill="#7cb5ec" d="M 289.47342064691776 32.00000270675102 A 130.5 130.5 0 0 1 380.88716196835566 69.34079955597768 L 289.5 162.5 A 0 0 0 0 0 289.5 162.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" class="highcharts-drilldown-point" style="cursor:pointer;"></path><path fill="#434348" d="M 380.98027545969603 69.4322332823112 A 130.5 130.5 0 0 1 419.997651007047 163.28299530200843 L 289.5 162.5 A 0 0 0 0 0 289.5 162.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" class="highcharts-drilldown-point" style="cursor:pointer;"></path><path fill="#90ed7d" d="M 419.9968027630554 163.41349253976827 A 130.5 130.5 0 0 1 377.1853829714265 259.1515577378568 L 289.5 162.5 A 0 0 0 0 0 289.5 162.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" class="highcharts-drilldown-point" style="cursor:pointer;"></path><path fill="#f7a35c" d="M 377.0886875871094 259.2391947804391 A 130.5 130.5 0 0 1 256.17758374770443 288.6739536319154 L 289.5 162.5 A 0 0 0 0 0 289.5 162.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" class="highcharts-drilldown-point" style="cursor:pointer;"></path><path fill="#8085e9" d="M 256.0514264763083 288.6405681342453 A 130.5 130.5 0 0 1 161.9655237164331 190.16238165950838 L 289.5 162.5 A 0 0 0 0 0 289.5 162.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)" class="highcharts-drilldown-point" style="cursor:pointer;"></path><path fill="#f15c80" d="M 161.93792510661677 190.0348333732909 A 130.5 130.5 0 0 1 289.3187381180817 32.00012588461948 L 289.5 162.5 A 0 0 0 0 0 289.5 162.5 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path></g><g class="highcharts-markers highcharts-series-0" visibility="visible" zIndex="0.1" transform="translate(10,53) scale(1 1)"></g></g><text x="300" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:536px;" y="24"><tspan>Most popular locations</tspan></text><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="6" transform="translate(10,53) scale(1 1)" opacity="1" style=""><path fill="none" d="M 355.2789923277902 13.95315859427232 C 350.2789923277902 13.95315859427232 347.2495098441621 21.357362527268094 343.08397142917335 31.53814293513728 L 338.9184330141846 41.718923343006466" stroke="#7cb5ec" stroke-width="1"></path><path fill="none" d="M 442.7387963835963 100.97350776500694 C 437.7387963835963 100.97350776500694 430.34994671961647 104.0402488109879 420.1902784316441 108.25701774921173 L 410.03061014367177 112.47378668743555" stroke="#434348" stroke-width="1"></path><path fill="none" d="M 440.98854154359674 228.08473295234145 C 435.98854154359674 228.08473295234145 428.6869319962523 224.8157119952154 418.6472188686538 220.32080817916707 L 408.60750574105526 215.82590436311875" stroke="#90ed7d" stroke-width="1"></path><path fill="none" d="M 332.38057669552103 318.46573953665194 C 327.38057669552103 318.46573953665194 325.49244826209946 310.6917462887191 322.89627166614474 300.0025055728115 L 320.30009507019 289.3132648569039" stroke="#f7a35c" stroke-width="1"></path><path fill="none" d="M 168.36379515030364 273.2819115339204 C 173.36379515030364 273.2819115339204 179.1525156412542 267.76007170668447 187.1120063163113 260.1675419442351 L 195.07149699136838 252.57501218178572" stroke="#8085e9" stroke-width="1"></path><path fill="none" d="M 159.61839811413438 61.67919108427981 C 164.61839811413438 61.67919108427981 170.84302624551708 66.70452735422225 179.4018899261683 73.6143647253931 L 187.96075360681954 80.52420209656395" stroke="#f15c80" stroke-width="1"></path><g zIndex="1" style="cursor:pointer;" transform="translate(360,4)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>Atlanta: 2313.0%</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(448,91)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>Chicago: 2386.0%</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(446,218)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>Houston: 2464.0%</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(337,308)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>New York: 2965.0%</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(38,263)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>Los Angeles: 3272.0%</tspan></text></g><g zIndex="1" style="" transform="translate(32,52)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#000000;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#000000;text-rendering:geometricPrecision;" y="16"><tspan>Rest of USA: 5310.0%</tspan></text></g></g><g class="highcharts-legend" zIndex="7"><g zIndex="1"><g></g></g></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(1,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 193.5 0.5 C 196.5 0.5 196.5 0.5 196.5 3.5 L 196.5 45.5 C 196.5 48.5 196.5 48.5 193.5 48.5 L 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="196" height="48"></path><path fill="none" d="M 3.5 0.5 L 193.5 0.5 C 196.5 0.5 196.5 0.5 196.5 3.5 L 196.5 45.5 C 196.5 48.5 196.5 48.5 193.5 48.5 L 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="196" height="48"></path><path fill="none" d="M 3.5 0.5 L 193.5 0.5 C 196.5 0.5 196.5 0.5 196.5 3.5 L 196.5 45.5 C 196.5 48.5 196.5 48.5 193.5 48.5 L 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="196" height="48"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 193.5 0.5 C 196.5 0.5 196.5 0.5 196.5 3.5 L 196.5 45.5 C 196.5 48.5 196.5 48.5 193.5 48.5 L 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#f15c80" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size:11px">Brands</tspan><tspan style="fill:#f15c80" x="8" dy="15">Rest of USA</tspan><tspan dx="0">: </tspan><tspan style="font-weight:bold" dx="0">5310.00%</tspan><tspan dx="0"> of total</tspan></text></g><text x="590" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">Highcharts.com</text></svg></div></div>
+
+<!-- Data from www.netmarketshare.com. Select Browsers => Desktop share by version. Download as tsv. -->
+<pre id="tsv" style="display:none">Browser Version    Total Market Share
+Microsoft Internet Explorer 8.0    26.61%
+Microsoft Internet Explorer 9.0    16.96%
+Chrome 18.0    8.01%
+Chrome 19.0    7.73%
+Firefox 12    6.72%
+Microsoft Internet Explorer 6.0    6.40%
+Firefox 11    4.72%
+Microsoft Internet Explorer 7.0    3.55%
+Safari 5.1    3.53%
+Firefox 13    2.16%
+Firefox 3.6    1.87%
+Opera 11.x    1.30%
+Chrome 17.0    1.13%
+Firefox 10    0.90%
+Safari 5.0    0.85%
+Firefox 9.0    0.65%
+Firefox 8.0    0.55%
+Firefox 4.0    0.50%
+Chrome 16.0    0.45%
+Firefox 3.0    0.36%
+Firefox 3.5    0.36%
+Firefox 6.0    0.32%
+Firefox 5.0    0.31%
+Firefox 7.0    0.29%
+Proprietary or Undetectable    0.29%
+Chrome 18.0 - Maxthon Edition    0.26%
+Chrome 14.0    0.25%
+Chrome 20.0    0.24%
+Chrome 15.0    0.18%
+Chrome 12.0    0.16%
+Opera 12.x    0.15%
+Safari 4.0    0.14%
+Chrome 13.0    0.13%
+Safari 4.1    0.12%
+Chrome 11.0    0.10%
+Firefox 14    0.10%
+Firefox 2.0    0.09%
+Chrome 10.0    0.09%
+Opera 10.x    0.09%
+Microsoft Internet Explorer 8.0 - Tencent Traveler Edition    0.09%</pre>
+
+  
+
+
+
+
+</body></html>

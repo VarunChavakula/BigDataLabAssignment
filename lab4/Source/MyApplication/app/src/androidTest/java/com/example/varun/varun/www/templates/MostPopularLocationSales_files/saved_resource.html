@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://fiddle.jshell.net/bjjdbjcq/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Highcharts Demo - jsFiddle demo</title>
+  
+  
+  <script type="text/javascript" src="jquery-1.9.1.js"></script><style type="text/css"></style>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+$(function () {
+    // Create the chart
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Most Popular location for sales'
+        },
+        subtitle: {
+            text: 'Click the columns to view versions. Source: <a href="http://netmarketshare.com">netmarketshare.com</a>.'
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            title: {
+                text: 'Total percent market share'
+            }
+
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+        },
+
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'United States',
+                y: 56.33,
+                drilldown: 'United States'
+            }, {
+                name: 'Bangladesh',
+                y: 24.03,
+                drilldown: 'Bangladesh'
+            }, {
+                name: 'UK',
+                y: 10.38,
+                drilldown: 'UK'
+            }]
+        }],
+        drilldown: {
+            series: [{
+                name: 'Microsoft Internet Explorer',
+                id: 'Microsoft Internet Explorer',
+                data: [
+                    [
+                        'v11.0',
+                        24.13
+                    ],
+                    [
+                        'v8.0',
+                        17.2
+                    ],
+                    [
+                        'v9.0',
+                        8.11
+                    ],
+                    [
+                        'v10.0',
+                        5.33
+                    ],
+                    [
+                        'v6.0',
+                        1.06
+                    ],
+                    [
+                        'v7.0',
+                        0.5
+                    ]
+                ]
+            }, {
+                name: 'Chrome',
+                id: 'Chrome',
+                data: [
+                    [
+                        'v40.0',
+                        5
+                    ],
+                    [
+                        'v41.0',
+                        4.32
+                    ],
+                    [
+                        'v42.0',
+                        3.68
+                    ],
+                    [
+                        'v39.0',
+                        2.96
+                    ],
+                    [
+                        'v36.0',
+                        2.53
+                    ],
+                    [
+                        'v43.0',
+                        1.45
+                    ],
+                    [
+                        'v31.0',
+                        1.24
+                    ],
+                    [
+                        'v35.0',
+                        0.85
+                    ],
+                    [
+                        'v38.0',
+                        0.6
+                    ],
+                    [
+                        'v32.0',
+                        0.55
+                    ],
+                    [
+                        'v37.0',
+                        0.38
+                    ],
+                    [
+                        'v33.0',
+                        0.19
+                    ],
+                    [
+                        'v34.0',
+                        0.14
+                    ],
+                    [
+                        'v30.0',
+                        0.14
+                    ]
+                ]
+            }, {
+                name: 'Firefox',
+                id: 'Firefox',
+                data: [
+                    [
+                        'v35',
+                        2.76
+                    ],
+                    [
+                        'v36',
+                        2.32
+                    ],
+                    [
+                        'v37',
+                        2.31
+                    ],
+                    [
+                        'v34',
+                        1.27
+                    ],
+                    [
+                        'v38',
+                        1.02
+                    ],
+                    [
+                        'v31',
+                        0.33
+                    ],
+                    [
+                        'v33',
+                        0.22
+                    ],
+                    [
+                        'v32',
+                        0.15
+                    ]
+                ]
+            }, {
+                name: 'Safari',
+                id: 'Safari',
+                data: [
+                    [
+                        'v8.0',
+                        2.56
+                    ],
+                    [
+                        'v7.1',
+                        0.77
+                    ],
+                    [
+                        'v5.1',
+                        0.42
+                    ],
+                    [
+                        'v5.0',
+                        0.3
+                    ],
+                    [
+                        'v6.1',
+                        0.29
+                    ],
+                    [
+                        'v7.0',
+                        0.26
+                    ],
+                    [
+                        'v6.2',
+                        0.17
+                    ]
+                ]
+            }, {
+                name: 'Opera',
+                id: 'Opera',
+                data: [
+                    [
+                        'v12.x',
+                        0.34
+                    ],
+                    [
+                        'v28',
+                        0.24
+                    ],
+                    [
+                        'v27',
+                        0.17
+                    ],
+                    [
+                        'v29',
+                        0.16
+                    ]
+                ]
+            }]
+        }
+    });
+});
+//]]> 
+
+</script>
+
+</head>
+<body>
+  <script src="highcharts.js"></script>
+<script src="data.js"></script>
+<script src="drilldown.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 1245px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="1245" height="400"><desc>Created with Highcharts 4.1.9</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="1167" height="288"></rect></clippath></defs><rect x="0" y="0" width="1245" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 68 360.5 L 1235 360.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 68 312.5 L 1235 312.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 68 264.5 L 1235 264.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 68 216.5 L 1235 216.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 68 168.5 L 1235 168.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 68 120.5 L 1235 120.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path><path fill="none" d="M 68 71.5 L 1235 71.5" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 456.5 360 L 456.5 370" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 845.5 360 L 845.5 370" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 1235.5 360 L 1235.5 370" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 67.5 360 L 67.5 370" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 68 360.5 L 1235 360.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="29.09375" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 29.09375 216)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="216"><tspan>Total percent market share</tspan></text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(68,72) scale(1 1)" style="" clip-path="url(#highcharts-1)"><rect x="101" y="19" width="187" height="270" fill="#7cb5ec" rx="0" ry="0" class="highcharts-drilldown-point" style="cursor:pointer;"></rect><rect x="490" y="174" width="187" height="115" fill="#434348" rx="0" ry="0" class="highcharts-drilldown-point" style="cursor:pointer;"></rect><rect x="879" y="239" width="187" height="50" fill="#90ed7d" rx="0" ry="0" class="highcharts-drilldown-point" style="cursor:pointer;"></rect></g><g class="highcharts-markers highcharts-series-0" visibility="visible" zIndex="0.1" transform="translate(68,72) scale(1 1)" clip-path="none"></g></g><text x="623" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:1181px;" y="24"><tspan>Most Popular location for sales</tspan></text><text x="623" text-anchor="middle" class="highcharts-subtitle" zIndex="4" style="color:#555555;fill:#555555;width:1181px;" y="52"><tspan>Click the columns to view versions. Source: </tspan><tspan onclick="location.href=&quot;http://netmarketshare.com&quot;" dx="0" style="cursor: pointer;">netmarketshare.com</tspan><tspan dx="0">.</tspan></text><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="6" transform="translate(68,72) scale(1 1)" opacity="1" style=""><g zIndex="1" style="cursor:pointer;" transform="translate(173,19)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>56.3%</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(562,147)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>24.0%</tspan></text></g><g zIndex="1" style="cursor:pointer;" transform="translate(951,212)" class="highcharts-drilldown-data-label"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#0d233a;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#0d233a;text-rendering:geometricPrecision;text-decoration:underline;" y="16"><tspan>10.4%</tspan></text></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"><text x="262.5" style="color:#0d233a;cursor:pointer;font-size:11px;fill:#0d233a;width:398px;text-overflow:clip;font-weight:bold;text-decoration:underline;" text-anchor="middle" transform="translate(0,0)" y="379" opacity="1" class=" highcharts-drilldown-axis-label"><tspan>United States</tspan></text><text x="651.5" style="color:#0d233a;cursor:pointer;font-size:11px;fill:#0d233a;width:398px;text-overflow:clip;font-weight:bold;text-decoration:underline;" text-anchor="middle" transform="translate(0,0)" y="379" opacity="1" class=" highcharts-drilldown-axis-label">Bangladesh</text><text x="1040.5" style="color:#0d233a;cursor:pointer;font-size:11px;fill:#0d233a;width:398px;text-overflow:clip;font-weight:bold;text-decoration:underline;" text-anchor="middle" transform="translate(0,0)" y="379" opacity="1" class=" highcharts-drilldown-axis-label">UK</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="53" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:401px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="363" opacity="1">0</text><text x="53" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:401px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="315" opacity="1">10</text><text x="53" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:401px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="267" opacity="1">20</text><text x="53" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:401px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="219" opacity="1">30</text><text x="53" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:401px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="171" opacity="1">40</text><text x="53" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:401px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="123" opacity="1">50</text><text x="53" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:401px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="75" opacity="1">60</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(168,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 187.5 0.5 C 190.5 0.5 190.5 0.5 190.5 3.5 L 190.5 45.5 C 190.5 48.5 190.5 48.5 187.5 48.5 L 100.5 48.5 94.5 54.5 88.5 48.5 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="190" height="48"></path><path fill="none" d="M 3.5 0.5 L 187.5 0.5 C 190.5 0.5 190.5 0.5 190.5 3.5 L 190.5 45.5 C 190.5 48.5 190.5 48.5 187.5 48.5 L 100.5 48.5 94.5 54.5 88.5 48.5 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="190" height="48"></path><path fill="none" d="M 3.5 0.5 L 187.5 0.5 C 190.5 0.5 190.5 0.5 190.5 3.5 L 190.5 45.5 C 190.5 48.5 190.5 48.5 187.5 48.5 L 100.5 48.5 94.5 54.5 88.5 48.5 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="190" height="48"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 187.5 0.5 C 190.5 0.5 190.5 0.5 190.5 3.5 L 190.5 45.5 C 190.5 48.5 190.5 48.5 187.5 48.5 L 100.5 48.5 94.5 54.5 88.5 48.5 3.5 48.5 C 0.5 48.5 0.5 48.5 0.5 45.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#7cb5ec" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size:11px">Brands</tspan><tspan style="fill:#7cb5ec" x="8" dy="15">United States</tspan><tspan dx="0">: </tspan><tspan style="font-weight:bold" dx="0">56.33%</tspan><tspan dx="0"> of total</tspan></text></g><text x="1235" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">Highcharts.com</text></svg></div></div>
+  
+
+
+
+
+</body></html>

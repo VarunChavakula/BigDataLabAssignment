@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://fiddle.jshell.net/1vg6d3uh/show/light/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Highcharts Demo - jsFiddle demo</title>
+  
+  
+  <script type="text/javascript" src="jquery-1.9.1.js"></script><style type="text/css"></style>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+
+
+
+<script type="text/javascript">//<![CDATA[
+
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            }
+        },
+        title: {
+            text: 'Most Popular Locations'
+        },
+        subtitle: {
+            text: '3D donut in Highcharts'
+        },
+        plotOptions: {
+            pie: {
+                innerSize: 100,
+                depth: 45
+            }
+        },
+        series: [{
+            name: 'Delivered amount',
+            data: [
+                ['NewYork', 21602715],
+                ['CNN', 21154850],
+                ['Twitter', 48340596],
+            
+            ]
+        }]
+    });
+});
+//]]> 
+
+</script>
+
+</head>
+<body>
+  <script src="highcharts.js"></script>
+<script src="highcharts-3d.js"></script>
+<script src="exporting.js"></script>
+
+<div id="container" style="height: 400px" data-highcharts-chart="0"><div class="highcharts-container" id="highcharts-0" style="position: relative; overflow: hidden; width: 1245px; height: 400px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="1245" height="400"><desc>Created with Highcharts 4.1.9</desc><defs><clippath id="highcharts-1"><rect x="0" y="0" width="1245" height="400"></rect></clippath></defs><rect x="0" y="0" width="1245" height="400" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-button" style="cursor:default;" stroke-linecap="round" transform="translate(1211,10)"><title>Chart context menu</title><rect x="0.5" y="0.5" width="24" height="22" strokeWidth="1" fill="white" stroke="none" stroke-width="1" rx="2" ry="2"></rect><path fill="#E0E0E0" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" stroke="#666" stroke-width="3" zIndex="1"></path><text x="0" zIndex="1" style="color:black;fill:black;" y="12"></text></g><g class="highcharts-series-group" zIndex="3"><path fill="rgba(144,237,125,0.25)" d="M 0 0"></path><g class="highcharts-series highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(10,72) scale(1 1)" style=""><path fill="rgba(99,156,211,1)" d="M 612.4701618756586 52.90885870479478 L 612.4701618756586 76.77371256984075 L 612.4898163398152 145.00951553903738 L 612.4898163398152 121.14466167399141 Z" zIndex="20.163647305236008" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(119,212,100,1)" d="M 612.4415493751937 52.908864801266745 L 612.4415493751937 76.77371866631272 L 612.4800509812948 145.0095176197445 L 612.4800509812948 121.14466375469854 Z" zIndex="39.49905808426557" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(99,156,211,1)" d="M 758.5195509143163 148.11725728709845 L 758.5195509143163 171.98211115214443 L 662.3360242028383 177.50384952617173 L 662.3360242028383 153.63899566112576 Z" zIndex="147488.84635269476" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(42,42,47,1)" d="M 758.5196694568996 148.11828980166396 L 758.5196694568996 171.98314366670994 L 662.3360646610579 177.5042019202214 L 662.3360646610579 153.63934805517542 Z" zIndex="147489.83635269478" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(99,156,211,1)" d="M 612.4701618756586 52.90885870479478 C 689.2176452780224 52.89780563151065 752.3090352352649 94.02656516757935 758.5195509143163 148.11725728709845 L 758.5195509143163 171.98211115214443 C 752.3090352352649 117.89141903262532 689.2176452780224 76.76265949655662 612.4701618756586 76.77371256984075 Z" zIndex="148978.63267948964" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(99,156,211,1)" d="M 612.4898163398152 121.14466167399141 C 638.6834966819189 121.14088929403096 660.2163942782474 135.17800858961755 662.3360242028383 153.63899566112576 L 662.3360242028383 177.50384952617173 C 660.2163942782474 159.04286245466352 638.6834966819189 145.00574315907693 612.4898163398152 145.00951553903738 Z" zIndex="148978.63267948964" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(42,42,47,1)" d="M 640.5714469684925 258.17163779809766 L 640.5714469684925 282.03649166314364 L 622.0806986240589 215.06507154357757 L 622.0806986240589 191.2002176785316 Z" zIndex="291929.84635269473" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(119,212,100,1)" d="M 640.5700091129982 258.17183628811915 L 640.5700091129982 282.0366901531651 L 622.0802078883953 215.06513928761223 L 622.0802078883953 191.20028542256625 Z" zIndex="291930.8363526948" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(42,42,47,1)" d="M 759 156.5 C 759 206.68938418874833 710.2347492285332 248.5546505173076 640.5714469684925 258.17163779809766 L 640.5714469684925 282.03649166314364 C 710.2347492285332 272.4195043823536 759 230.5542380537943 759 180.36485386504597 Z" zIndex="294878.6326794896" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(42,42,47,1)" d="M 662.3360646610579 153.63934805517542 C 664.4113389606504 171.71625957372498 647.2541455611473 187.72503474643437 622.0806986240589 191.2002176785316 L 622.0806986240589 215.06507154357757 C 647.2541455611473 211.58988861148035 664.4113389606504 195.58111343877096 662.3360646610579 177.5042019202214 Z" zIndex="294878.6326794896" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(119,212,100,1)" d="M 640.5700091129982 258.17183628811915 C 561.1593653980606 269.1338567164244 484.21694817068516 232.50029846099045 468.7143102099649 176.34849379176916 C 466.81154815006335 169.45653619137178 466 163.52206033112617 466 156.5 L 466 180.36485386504597 C 466 123.1675768543472 531.5523909340376 76.79653925729221 612.4415493751937 76.77371866631272 L 612.4415493751937 52.908864801266745 C 531.5523909340376 52.93168539224623 466 99.30272298930123 466 156.5 L 466 180.36485386504597 C 466 237.57666260660704 531.5902841497888 283.95599730887517 612.5 283.95599730887517 C 622.4306929560807 283.95599730887517 630.8233092032158 283.38214610870597 640.5700091129982 282.0366901531651 Z" zIndex="294879.6326794897" transform="translate(0,0)" visibility="visible"></path><path fill="rgba(119,212,100,1)" d="M 622.0802078883953 191.20028542256625 C 594.9775991119661 194.94158932301175 568.7173884541588 182.4386684167203 563.4263857371894 163.27422996306115 C 558.13538302022 144.10979150940202 575.8171833351755 125.54101847787922 602.9197921116047 121.79971457743373 C 606.2394268219931 121.34146487931494 609.097750231658 121.14561797530689 612.4800509812948 121.14466375469854 L 612.4800509812948 145.0095176197445 C 584.8658156876461 145.0173081961455 562.4889864408287 160.85274691803053 562.5000039796337 180.37895995145044 C 562.5110215184386 199.90517298487035 584.9057137250566 215.72798068674842 612.5199490187052 215.72019011034743 C 615.902249768342 215.71923588973908 618.7605731780069 215.52338898573103 622.0802078883953 215.06513928761223 Z" zIndex="294879.6326794897" transform="translate(0,0)" visibility="visible"></path><g zIndex="31416026.53589793" stroke="#7cb5ec" stroke-width="1" stroke-linejoin="round"><path fill="#7cb5ec" d="M 612.4701618756586 52.90885870479478 C 689.2176452780224 52.89780563151065 752.3090352352649 94.02656516757935 758.5195509143163 148.11725728709845 L 662.3360242028383 153.63899566112576 C 660.2163942782474 135.17800858961755 638.6834966819189 121.14088929403096 612.4898163398152 121.14466167399141 Z" zIndex="314160.2653589793" transform="translate(0,0)" visibility="visible"></path></g><g zIndex="31416026.53589793" stroke="#434348" stroke-width="1" stroke-linejoin="round"><path fill="#434348" d="M 758.5196694568996 148.11828980166396 C 764.6002231547055 201.08364055101418 714.3296464941617 247.9893518070528 640.5714469684925 258.17163779809766 L 622.0806986240589 191.2002176785316 C 647.2541455611473 187.72503474643437 664.4113389606504 171.71625957372498 662.3360646610579 153.63934805517542 Z" zIndex="314160.2653589793" transform="translate(0,0)" visibility="visible"></path></g><g zIndex="31416026.53589793" stroke="#90ed7d" stroke-width="1" stroke-linejoin="round"><path fill="#90ed7d" d="M 640.5700091129982 258.17183628811915 C 561.1593653980606 269.1338567164244 484.21694817068516 232.50029846099045 468.7143102099649 176.34849379176916 C 453.21167224924466 120.19668912254787 505.0193471720642 65.79018414018611 584.4299908870018 54.82816371188083 C 594.1565205884399 53.485492096392775 602.5314081787579 52.91166066764922 612.4415493751937 52.908864801266745 L 612.4800509812948 121.14466375469854 C 584.8658156876461 121.15245433109953 562.4889864408287 136.98789305298456 562.5000039796337 156.51410608640447 C 562.5110215184386 176.04031911982437 584.9057137250566 191.86312682170245 612.5199490187052 191.85533624530146 C 615.902249768342 191.8543820246931 618.7605731780069 191.65853512068506 622.0802078883953 191.20028542256625 Z" zIndex="314160.2653589793" transform="translate(0,0)" visibility="visible"></path></g></g><g class="highcharts-markers highcharts-series-0" visibility="visible" zIndex="0.1" transform="translate(10,72) scale(1 1)"></g></g><text x="623" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:1181px;" y="24"><tspan>Most Popular Locations</tspan></text><text x="623" text-anchor="middle" class="highcharts-subtitle" zIndex="4" style="color:#555555;fill:#555555;width:1181px;" y="52"><tspan>3D donut in Highcharts</tspan></text><g class="highcharts-data-labels highcharts-series-0 highcharts-tracker" visibility="visible" zIndex="6" transform="translate(10,72) scale(1 1)" opacity="1" style=""><path fill="none" d="M 764.161589828782 58.3031157882588 C 759.161589828782 58.3031157882588 726.7366195458045 64.18389040460607 719.2790360739716 72.2699555020836 L 711.8214526021387 80.35602059956113" stroke="#7cb5ec" stroke-width="1"></path><path fill="none" d="M 759.677767605297 261.083614389512 C 754.677767605297 261.083614389512 746.7706181455188 256.25028410350444 738.0051771983336 249.60445496024406 L 729.2397362511484 242.95862581698367" stroke="#434348" stroke-width="1"></path><path fill="none" d="M 434.8559299276037 193.19162123479322 C 439.8559299276037 193.19162123479322 444.7801805083393 192.42266913879723 455.72924884310646 191.36536000680275 L 466.6783171778736 190.30805087480826" stroke="#90ed7d" stroke-width="1"></path><g zIndex="1" style="" transform="translate(769,48)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#000000;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#000000;text-rendering:geometricPrecision;" y="16"><tspan>NewYork</tspan></text></g><g zIndex="1" style="" transform="translate(765,251)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#000000;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#000000;text-rendering:geometricPrecision;" y="16"><tspan>CNN</tspan></text></g><g zIndex="1" style="" transform="translate(386,183)"><text x="5" zIndex="1" style="font-size:11px;font-weight:bold;color:#000000;text-shadow:0 0 6px #FFFFFF, 0 0 3px #FFFFFF;fill:#000000;text-rendering:geometricPrecision;" y="16"><tspan>Twitter</tspan></text></g></g><g class="highcharts-legend" zIndex="7"><g zIndex="1"><g></g></g></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(298,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 207.5 0.5 C 210.5 0.5 210.5 0.5 210.5 3.5 L 210.5 44.5 C 210.5 47.5 210.5 47.5 207.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)" width="210" height="47"></path><path fill="none" d="M 3.5 0.5 L 207.5 0.5 C 210.5 0.5 210.5 0.5 210.5 3.5 L 210.5 44.5 C 210.5 47.5 210.5 47.5 207.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)" width="210" height="47"></path><path fill="none" d="M 3.5 0.5 L 207.5 0.5 C 210.5 0.5 210.5 0.5 210.5 3.5 L 210.5 44.5 C 210.5 47.5 210.5 47.5 207.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)" width="210" height="47"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 207.5 0.5 C 210.5 0.5 210.5 0.5 210.5 3.5 L 210.5 44.5 C 210.5 47.5 210.5 47.5 207.5 47.5 L 3.5 47.5 C 0.5 47.5 0.5 47.5 0.5 44.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#90ed7d" stroke-width="1"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">Twitter</tspan><tspan style="fill:#90ed7d" x="8" dy="15">●</tspan><tspan dx="0"> Delivered amount: </tspan><tspan style="font-weight:bold" dx="0">48 340 596</tspan></text></g><text x="1235" text-anchor="end" zIndex="8" style="cursor:pointer;color:#909090;font-size:9px;fill:#909090;" y="395">Highcharts.com</text></svg></div></div>
+  
+
+
+
+
+</body></html>
