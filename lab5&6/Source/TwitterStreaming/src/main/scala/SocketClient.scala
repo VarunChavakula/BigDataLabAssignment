@@ -1,8 +1,8 @@
-import java.io.{DataInputStream, PrintStream, IOException}
+import java.io.{PrintStream, IOException}
 import java.net.{Socket, InetAddress}
 
 /**
- * Created by Sowmya on 02-Mar-16.
+ * Created by Mayanka on 10-Sep-15.
  */
 object SocketClient {
 
@@ -20,7 +20,7 @@ object SocketClient {
     try {
 
 
-      lazy val address: Array[Byte] = Array(10.toByte, 0.toByte, 2.toByte, 15.toByte)
+      lazy val address: Array[Byte] = Array(192.toByte, 168.toByte, 1.toByte, 168.toByte)
       val ia = InetAddress.getByAddress(address)
       val socket = new Socket(ia, 1234)
       val out = new PrintStream(socket.getOutputStream)
